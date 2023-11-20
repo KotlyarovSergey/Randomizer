@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Randomizer" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#C62121</item>
+        <item name="color">#69A53E</item>
+        <item name="colorButtonNormal">#0A2EE4</item>
+        <item name="colorContainer">#B8A919</item>
+        <item name="colorBackgroundFloating">#632C2C</item>
+        <item name="colorAccent">#981359</item>
+    </style>
+
+    <style name="Theme.Randomizer" parent="Base.Theme.Randomizer" />
+</resources>
