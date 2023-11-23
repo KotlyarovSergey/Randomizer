@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Randomizer</string>
+    <string name="back_button">Menu</string>
+    <string name="menu_item_numbers_title">Числа</string>
+    <string name="menu_item_lists_title">Списки</string>
+    <string name="menu_item_dice_title">Кости</string>
 </resources>
