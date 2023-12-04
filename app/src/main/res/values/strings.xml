@@ -4,4 +4,6 @@
     <string name="menu_item_numbers_title">Числа</string>
     <string name="menu_item_lists_title">Списки</string>
     <string name="menu_item_dice_title">Кости</string>
+    <string name="bt_generate_title">GENERATE</string>
+    <string name="tv_numbers_result_start_text">00000</string>
 </resources>
