@@ -4,6 +4,13 @@
     <string name="menu_item_numbers_title">Числа</string>
     <string name="menu_item_lists_title">Списки</string>
     <string name="menu_item_dice_title">Кости</string>
+
+    <!-- Activity Numbers    -->
     <string name="bt_generate_title">GENERATE</string>
+    <string name="tv_range_title">ДИАПАЗОН</string>
+    <string name="tv_quantity_numbers_title">Несколько чисел</string>
     <string name="tv_numbers_result_start_text">00000</string>
+    <string name="et_range_start_hint">от</string>
+    <string name="et_range_end_hint">до</string>
+    <string name="et_quantity_numbers_hint">1</string>
 </resources>
