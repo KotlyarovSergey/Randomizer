@@ -19,21 +19,17 @@ class ActivityNumbers : AppCompatActivity() {
     fun onClickGenerate(view: View){
 //        Log.i("ksvlog", "onClick if worked")
 
-        var start = 0
-        var tmpString = binding.etRangeStart.text.toString()
+        if (binding.etRangeStart.text.isEmpty())
+            binding.etRangeStart.setText("0")
 
-        if (!tmpString.isEmpty()){
-            start = tmpString.toInt()
-        }
+        if(binding.etRangeEnd.text.isEmpty())
+            binding.etRangeEnd.setText("0")
 
-        var end = 0
-        tmpString = binding.etRangeEnd.text.toString()
-        if(!tmpString.isEmpty()){
-            end = tmpString.toInt()
-        }
+        var start = binding.etRangeStart.text.toString().toInt()
+        var end = binding.etRangeEnd.text.toString().toInt()
 
         if(start > end){
-            var tmpInt = end
+            val tmpInt = end
             end = start
             start = tmpInt
         }
