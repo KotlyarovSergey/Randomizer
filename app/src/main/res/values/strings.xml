@@ -7,10 +7,16 @@
 
     <!-- Activity Numbers    -->
     <string name="bt_generate_title">GENERATE</string>
-    <string name="tv_range_title">ДИАПАЗОН</string>
+    <string name="tv_range_title">Диапазон значений</string>
     <string name="tv_quantity_numbers_title">Несколько чисел</string>
     <string name="tv_numbers_result_start_text">00000</string>
-    <string name="et_range_start_hint">от</string>
-    <string name="et_range_end_hint">до</string>
+    <string name="et_range_start_hint">0</string>
+    <string name="et_range_end_hint">10</string>
+    <string name="tv_start_text">от</string>
+    <string name="tv_end_text">до</string>
     <string name="et_quantity_numbers_hint">1</string>
+    <string name="switch_linear_yes">Равномерно</string>
+    <string name="switch_linear_no">Случайно</string>
+    <string name="switch_shuffle_yes">Перемешать</string>
+    <string name="switch_shuffle_no">Как есть, так и есть</string>
 </resources>

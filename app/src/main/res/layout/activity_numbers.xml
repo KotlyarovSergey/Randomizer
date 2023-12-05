@@ -7,116 +7,231 @@
     android:background="#03A9F4"
     tools:context=".ActivityNumbers">
 
-    <Button
-        android:id="@+id/btGenerate"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:onClick="onClickGenerate"
-        android:paddingVertical="15dp"
-        android:text="@string/bt_generate_title"
-        android:textColor="#57D724"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:cornerRadius="6dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
-
-    <CheckedTextView
-        android:id="@+id/tvResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tv_numbers_result_start_text"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btGenerate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:background="#00BCD4"
-        android:orientation="vertical"
-        app:circularflow_radiusInDP="5dp"
+        app:cardBackgroundColor="@color/cards_numbers_color"
+        app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="casual"
+                android:text="@string/tv_range_title"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etRangeStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="#BEDCEA"
+                    android:ems="10"
+                    android:hint="@string/et_range_start_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/etRangeEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="#BEDCEA"
+                    android:ems="10"
+                    android:hint="@string/et_range_end_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/tv_start_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/tv_end_text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/cards_numbers_color"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardRange">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="casual"
+                android:text="@string/tv_quantity_numbers_title"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etQuantityNumbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#BEDCEA"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/et_quantity_numbers_hint"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textSize="24sp" />
+
+            <Switch
+                android:id="@+id/switchLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:enabled="true"
+                android:minHeight="48dp"
+                android:paddingHorizontal="4dp"
+                android:text="@string/switch_linear_yes"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/switchShuffle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:enabled="true"
+                android:minHeight="48dp"
+                android:paddingHorizontal="4dp"
+                android:text="@string/switch_shuffle_yes"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/cards_numbers_color"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btGenerate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardQuantity">
+
         <TextView
-            android:id="@+id/tvRange"
+            android:id="@+id/tvResult"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/tv_range_title"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/etRangeStart"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:background="#BEDCEA"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/et_range_start_hint"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:minHeight="45dp"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/etRangeEnd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:background="#BEDCEA"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/et_range_end_hint"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:minHeight="45dp"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/tvQuantity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/tv_quantity_numbers_title"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/etQuantityNumbers"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:background="#BEDCEA"
-            android:ems="10"
+            android:layout_marginVertical="16dp"
+            android:autoSizeMaxTextSize="34sp"
+            android:autoSizeTextType="uniform"
             android:gravity="center"
-            android:hint="@string/et_quantity_numbers_hint"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:minHeight="45dp"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
-            android:textSize="24sp" />
-    </LinearLayout>
+            android:maxHeight="140dp"
+            android:minHeight="56dp"
+            android:text="@string/tv_numbers_result_start_text"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btGenerate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="onClickGenerate"
+        android:paddingVertical="15dp"
+        android:text="@string/bt_generate_title"
+        android:textColor="#57D724"
+        android:textColorLink="#2196F3"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

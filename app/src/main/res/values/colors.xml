@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
     <color name="toolbar_color">#21531F</color>
+    <color name="cards_numbers_color">#1EB5FA</color>
 </resources>
