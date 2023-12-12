@@ -10,6 +10,7 @@
         <item name="colorContainer">#B8A919</item>
         <item name="colorBackgroundFloating">#632C2C</item>
         <item name="colorAccent">#981359</item>
+        <item name="colorSecondary">#FF5722</item>>
     </style>
 
     <style name="Theme.Randomizer" parent="Base.Theme.Randomizer" />

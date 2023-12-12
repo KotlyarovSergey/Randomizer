@@ -156,23 +156,23 @@
                 android:paddingEnd="8dp"
                 android:textSize="24sp" />
 
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switchLinear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:enabled="true"
+                android:checked="true"
                 android:minHeight="48dp"
                 android:paddingHorizontal="4dp"
                 android:text="@string/switch_linear_yes"
                 android:textSize="20sp" />
 
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switchShuffle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
-                android:enabled="true"
+                android:checked="true"
                 android:minHeight="48dp"
                 android:paddingHorizontal="4dp"
                 android:text="@string/switch_shuffle_yes"
