@@ -165,7 +165,8 @@
                 android:minHeight="48dp"
                 android:paddingHorizontal="4dp"
                 android:text="@string/switch_linear_yes"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                app:thumbTint="#3F51B5" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switchShuffle"
@@ -176,7 +177,8 @@
                 android:minHeight="48dp"
                 android:paddingHorizontal="4dp"
                 android:text="@string/switch_shuffle_yes"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                app:thumbTint="#3F51B5" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

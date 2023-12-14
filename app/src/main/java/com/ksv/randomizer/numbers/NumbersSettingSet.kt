@@ -1,8 +1,8 @@
 package com.ksv.randomizer.numbers
 
-import android.util.Range
-
 data class NumbersSettingSet(
     val range: IntRange,
-    val quantity: Int
+    val quantity: Int,
+    val linear: Boolean,
+    val shuffle: Boolean
 )

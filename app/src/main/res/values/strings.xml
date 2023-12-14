@@ -18,5 +18,5 @@
     <string name="switch_linear_yes">Равномерно</string>
     <string name="switch_linear_no">Случайно</string>
     <string name="switch_shuffle_yes">Перемешать</string>
-    <string name="switch_shuffle_no">Как есть, так и есть</string>
+    <string name="switch_shuffle_no">Подряд</string>
 </resources>
